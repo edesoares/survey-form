@@ -1,0 +1,50 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url(../assets/ufo-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+label{
+    font-size: 1.0rem;
+}
+#title{
+    font-size: 2.0rem;
+}
+#description{
+    font-size: 1.2rem;
+}
+#form-container{
+    
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    justify-items: center;
+    width:60%;
+    max-width: 720px;
+    padding: 25px;
+    background-color: rgba(10, 17, 10, 0.8);
+}
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#form-group{
+    display: flex;
+    flex-direction: column;
+}
