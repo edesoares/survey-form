@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Pesquisa de satisfação - Ovnis na Web</title>
+</head>
+<body>
+    <head id="head">
+        <h1 id="title">Pesquisa de satisfação</h1>
+        <p id="description">Queremos saber o que você acha do nosso site</p>
+    </head>
+    <main id="form-container">
+        <form id="survey-form">
+            <div id="form-group">
+                <label for="name" id="name-label">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email" id="email-label">E-mail:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="number" id="number-label">Idade:</label>
+                <input type="text" id="number" name="age">
+    
+                <!-- Dropdown -->
+                <label for="where">De onde você é?</label>
+                <select name="where" id="dropdown" required>
+                    <option selected="selected" value="a" disabled>Escolha uma localização</option>
+                    <option value="earth">Terra</option>
+                    <option value="moon">Lua</option>
+                    <option value="mars">Marte</option>
+                    <option value="ceres">Ceres</option>
+                    <option value="ganymede">Ganimedes</option>
+                    <option value="extra-solar">Fora do sistema solar</option>
+                    <option value="other">Outro</option>
+                </select> 
+
+            </div>
+
+
+            <legend>Você recomendaria este site? </legend>
+            <label for="option1">Sim</label>
+            <input type="radio" name="radio" value="1" id="option1"/>
+            <label for="option2">Com certeza</label>
+            <input type="radio" name="radio" value="2" id="option2"/>
+            <label for="option3">Mas é claro</label>
+            <input type="radio" name="radio" value="3" id="option3"/>
+
+            <label for="interest">O que você procura no site?</label>
+            <select name="interest" id="dropdown">
+                <option value="" disabled selected>Escolha uma opção</option>
+                <option value="earth">Vender Ovnis usados</option>
+                <option value="moon">Comprar Ovnis usados</option>
+                <option value="mars">Não sei</option>
+            </select> 
+
+            <label>O que você gostaria de ver no nosso site? </label>
+            <label for="option4">Estação Espacial</label>
+            <input type="checkbox" name="station" value="1" id="option4"/>
+            <label for="option5">Compostos de carbono</label>
+            <input type="checkbox" name="carbon" value="2" id="option5"/>
+            <label for="option6">Computador quântico</label>
+            <input type="checkbox" name="quantum-desktop" value="3" id="option6"/>
+            <label for="option7">Peças de reposição</label>
+            <input type="checkbox" name="spacecraft-parts" value="4" id="option7"/>    
+            <label for="option8">Droids</label>
+            <input type="checkbox" name="droids" value="5" id="option8"/>    
+            <label for="option9">Isótopos Radioativos</label>
+            <input type="checkbox" name="radioactive-isotopes" value="6" id="option9"/>    
+
+            <label for="suggestions">Como podemos melhorar?</label>
+            <textarea id="suggestions" name="suggestions" rows="4" cols="50" placeholder="Escreva um comentário ou sugestão aqui"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
