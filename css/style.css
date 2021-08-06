@@ -1,11 +1,21 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
+
 body::before{
     content: '';
     position: fixed;
@@ -19,32 +29,104 @@ body::before{
     background-repeat: no-repeat;
     background-position: center;
 }
-label{
-    font-size: 1.0rem;
+
+label, legend{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
 }
+
 #title{
     font-size: 2.0rem;
 }
+
 #description{
     font-size: 1.2rem;
 }
+
 #form-container{
-    
+    overflow: visible;
     margin: auto;
     border-radius: 8px;
     display: flex;
     justify-items: center;
+    flex-direction: column;
     width:60%;
     max-width: 720px;
-    padding: 25px;
-    background-color: rgba(10, 17, 10, 0.8);
+    min-width: 270px;
+    padding: 60px;
+    background-color: hsla(120, 26%, 5%, 0.8);
 }
+
 #survey-form{
     display: flex;
     flex-direction: column;
-    margin: auto;
+    width: 100%;
+    
 }
+
 #form-group{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+}
+
+input[type=text], select{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 1.0rem;
+    color: hsl(129, 11%, 26%);
+}
+
+textarea{
+    resize: vertical;
+    width: 100%;
+    min-height: 6rem;
+    padding: 1.0rem;
+    margin-bottom: 1.5rem;
+    color: hsl(129, 11%, 26%);
+}
+
+input[type=radio], input[type=checkbox]{
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+#submit{
+    width: 100%;
+    padding: 1.0rem;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: hsla(147, 100%, 20%, 0.774);
+}
+#submit:hover{
+    border-color: hsl(0, 0%, 100%);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem hsla(147, 52%, 56%, 0.541);
+}
+
+#survey-form{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+}
+
+@media (max-width: 960px) {
+    body{
+        margin: 0;
+    }
+    #form-container{
+        margin: 0;
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0;
+    }
 }
