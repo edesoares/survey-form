@@ -74,7 +74,7 @@ label, legend{
 
 }
 
-input[type=text], select{
+input[type=text], input[type=number], input[type=email], select{
     width: 100%;
     margin: 10px 0px 10px 0px;
     padding: 1.0rem;
